@@ -11,8 +11,10 @@ Ejecutar en consola los siguientes comandos:
 1. npm install
 2. npm start
 
-Datos para iniciar sesion:
+Datos para iniciar sesion:     
+
 Usuario: admin
+
 Contraseña: admin1234
 
 
