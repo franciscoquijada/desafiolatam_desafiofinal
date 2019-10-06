@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormGroup, Input, Button, Label, Spinner } from 'reactstrap';
+import { Form, FormGroup, Input, Button, Label } from 'reactstrap';
 import useGenericInput from './../../hooks/useGenericInput';
 import { productAsyncCreate } from './../../store/modules/product/product.action';
 import { useDispatch } from 'react-redux';

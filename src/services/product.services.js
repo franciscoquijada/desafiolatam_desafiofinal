@@ -2,7 +2,6 @@ import axios from 'axios';
 import { apiHost } from '../configure';
 
 class ApiError extends Error { }
-//const prevJwt = () => JSON.parse(localStorage.getItem('jwt')) || '';
 const prevJwt = localStorage.getItem('token');
 
 export const productsGetAll = async (data) => {
@@ -37,10 +36,9 @@ export const productsCreate = async (data) => {
 export const productDelete = async (data, token) => {
     try {
         console.log(' toekn ', token);
-        return await axios.delete(`${apiHost}/api/product/${data.id}`,/* data,*/ {
+        return await axios.delete(`${apiHost}/api/product/${data.id}`, {
             headers: {
                 authorization: `bearer ${token}`,
-                /*data: data,*/
             },
         });
     } catch (error) {
