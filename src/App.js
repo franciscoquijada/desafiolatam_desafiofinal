@@ -8,9 +8,7 @@ import FormCreate from './components/products/FormCreate';
 import FormEdit from './components/products/FormEdit';
 import Login from './views/login/Login';
 import Logout from './views/login/Logout';
-import NavBar from "./components/nav-bar/NavBar";
-import { useSelector } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -18,8 +16,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  Button
+  NavLink
 } from 'reactstrap';
 import PrivateRoute from './components/private-route/PrivateRoute';
 

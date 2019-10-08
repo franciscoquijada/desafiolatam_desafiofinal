@@ -16,7 +16,6 @@ import { Link } from "react-router-dom";
 
 const Home = (props) => {
     const dispatch = useDispatch();
-    const jwt = useSelector(store => store.auth.auth.data);
     const data = useSelector(store => store.products.getAll.data);
     const addIcon = <FontAwesomeIcon icon={faPlus} />;
     const removeIcon = <FontAwesomeIcon icon={faTrash} />;
